@@ -9,10 +9,10 @@
         public function __construct()
         {
             //$this (là một biến giả) tham chiếu đến đối tượng hiện tại của lớp
-            // $this -> server = "co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-            // $this -> user = "lekk19bbvl5okwfd";
-            // $this -> password = "qjq4gnq342z3sxnn";
-            // $this -> dbName = "he6g5d11y0fxzl8h";
+            // $this -> server = "localhost";
+            // $this -> user = "root";
+            // $this -> password = "";
+            // $this -> dbName = "asm2";
             $this -> server = "dfkpczjgmpvkugnb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
             $this -> user = "t1bm8b8vgjga99lb";
             $this -> password = "ovhemwaamss384ej";
