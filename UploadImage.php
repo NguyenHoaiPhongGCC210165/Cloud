@@ -5,16 +5,17 @@
     if(isset($_POST['btnSubmit'])){
         $pID = $_POST['pID'];
         $pName = $_POST['pName'];
-        $Price = $_POST['Price'];
-        $Status = $_POST['Status'];
-        $Desc = $_POST['Desc'];
-        $Quantity = $_POST['Quantity'];
-        $Cat = $_POST['Cat'];
-        $img = str_replace(' ','-',$_FILES['Pro_image']['name']);
+        $pImg = str_replace(' ','-',$_FILES['Pro_image']['name']);
+        $pQuantity = $_POST['pQuantity'];
+        $pPrice = $_POST['Price'];
+        $eID = $_POST['eID'];
+        $cID = $_POST['cID'];
+        $supID = $_POST['supID'];
+
         /*lưu ảnh trong project, không lưu trong ổ c,d */
         $storedImage = "../Images/";
 
-        $flag = move_uploaded_file($_FILES['Pro_image']['tmp_name'],$storedImage.$img);
+        $flag = move_uploaded_file($_FILES['Pro_image']['tmp_name'],$storedImage.$pImg);
         if($flag){
             $c = new Connect();
             $dblink = $c -> connectToPDO();
@@ -22,11 +23,11 @@
             $sql="INSERT INTO `product`(`pID`, `pName`, `pPrice`, `pStatus`, `pImage`, `pDesc`, `pQuantity`, `pCatID`) 
                 VALUES(?,?,?,?,?,?,?,?)";
             $re = $dblink->prepare($sql);
-            $stmt = $re->execute(array("$pID", "$pName", $Price, $Status, "$img", $Desc, $Quantity, "$Cat"));
+            $stmt = $re->execute(array("$pID", "$pName", $Price, $Status, "$pImg", $Desc, $Quantity, "$Cat"));
 
             // $sql = "INSERT INTO `image`(`iImage`) VALUES (?)";
             // $re = $dblink->prepare($sql);
-            // $stmt = $re->execute(array("$img"));
+            // $stmt = $re->execute(array("$pImg"));
 
             if($stmt == TRUE)
             {
@@ -51,14 +52,6 @@
                                         <label for="exampleFormControlInput1" class="form-label">Product Name</label>
                                         <input type="text" class="form-control" name="pName" id="exampleFormControlInput1" placeholder="">
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Price</label>
-                                        <input type="text" class="form-control" name="Price" id="exampleFormControlInput1" placeholder="">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Status</label>
-                                        <input type="text" class="form-control" name="Status" id="exampleFormControlInput1" placeholder="">
-                                    </div>
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label for="image-vertical">Image</label>
@@ -67,15 +60,23 @@
                                         </div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Description</label>
-                                        <input type="text" class="form-control" name="Desc" id="exampleFormControlInput1" placeholder="">
-                                    </div>
-                                    <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Quantity</label>
                                         <input type="text" class="form-control" name="Quantity" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Price</label>
+                                        <input type="text" class="form-control" name="Price" id="exampleFormControlInput1" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Employee Name</label>
+                                        <input type="text" class="form-control" name="Status" id="exampleFormControlInput1" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Category</label>
+                                        <input type="text" class="form-control" name="Desc" id="exampleFormControlInput1" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Supplier</label>
                                         <input type="text" class="form-control" name="Cat" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="col-12 d-flex mt-3 justify-content-center">
