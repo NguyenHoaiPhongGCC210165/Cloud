@@ -61,23 +61,23 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Quantity</label>
-                                        <input type="text" class="form-control" name="Quantity" id="exampleFormControlInput1" placeholder="">
+                                        <input type="text" class="form-control" name="pQuantity" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Price</label>
-                                        <input type="text" class="form-control" name="Price" id="exampleFormControlInput1" placeholder="">
+                                        <input type="text" class="form-control" name="pPrice" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Employee Name</label>
-                                        <input type="text" class="form-control" name="Status" id="exampleFormControlInput1" placeholder="">
+                                        <input type="text" class="form-control" name="eID" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Category</label>
-                                        <input type="text" class="form-control" name="Desc" id="exampleFormControlInput1" placeholder="">
+                                        <input type="text" class="form-control" name="cID" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Supplier</label>
-                                        <input type="text" class="form-control" name="Cat" id="exampleFormControlInput1" placeholder="">
+                                        <input type="text" class="form-control" name="supID" id="exampleFormControlInput1" placeholder="">
                                     </div>
                                     <div class="col-12 d-flex mt-3 justify-content-center">
                                         <button type="submit" class="btn btn-warning me-1 mb-1 rounded-pill" 
