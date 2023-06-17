@@ -13,7 +13,7 @@
         $supID = $_POST['supID'];
 
         /*lưu ảnh trong project, không lưu trong ổ c,d */
-        $storedImage = "../Images/";
+        $storedImage = "./Images/";
 
         $flag = move_uploaded_file($_FILES['Pro_image']['tmp_name'],$storedImage.$pImg);
         if($flag){
