@@ -23,7 +23,7 @@
             $sql="INSERT INTO `product`(`pID`, `pName`, `pPrice`, `pStatus`, `pImage`, `pDesc`, `pQuantity`, `pCatID`) 
                 VALUES(?,?,?,?,?,?,?,?)";
             $re = $dblink->prepare($sql);
-            $stmt = $re->execute(array("$pID", "$pName", $Price, $Status, "$pImg", $Desc, $Quantity, "$Cat"));
+            $stmt = $re->execute(array("$pID", "$pName", "$pImg", $pQuantity, $pPrice, $eID, $cID, $supID));
 
             // $sql = "INSERT INTO `image`(`iImage`) VALUES (?)";
             // $re = $dblink->prepare($sql);
