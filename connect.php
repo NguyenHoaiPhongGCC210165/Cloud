@@ -9,14 +9,15 @@
         public function __construct()
         {
             //$this (là một biến giả) tham chiếu đến đối tượng hiện tại của lớp
-            // $this -> server = "localhost";
-            // $this -> user = "root";
-            // $this -> password = "";
-            // $this -> dbName = "asm2";
-            $this -> server = "dfkpczjgmpvkugnb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-            $this -> user = "t1bm8b8vgjga99lb";
-            $this -> password = "ovhemwaamss384ej";
-            $this -> dbName = "egi9i2dbo2b5gix8";
+            $this -> server = "localhost";
+            $this -> user = "root";
+            $this -> password = "";
+            $this -> dbName = "asm2_cloud";
+
+            // $this -> server = "dfkpczjgmpvkugnb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+            // $this -> user = "t1bm8b8vgjga99lb";
+            // $this -> password = "ovhemwaamss384ej";
+            // $this -> dbName = "egi9i2dbo2b5gix8";
         }
         //Option 1: use mySQL (no condition)
         function connectToMySQL():mysqli
