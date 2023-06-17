@@ -7,7 +7,7 @@
         $pName = $_POST['pName'];
         $pImg = str_replace(' ','-',$_FILES['Pro_image']['name']);
         $pQuantity = $_POST['pQuantity'];
-        $pPrice = $_POST['Price'];
+        $pPrice = $_POST['pPrice'];
         $eID = $_POST['eID'];
         $cID = $_POST['cID'];
         $supID = $_POST['supID'];
@@ -31,9 +31,9 @@
 
             if($stmt == TRUE)
             {
-                echo "Success!";
+                echo "<script> alert('Success!') </script>";
             }else{
-                echo "Failed!";
+                echo "<script> alert('Failed!!!') </script>";
             }
         }
     }
