@@ -20,7 +20,7 @@
             $c = new Connect();
             $dblink = $c -> connectToPDO();
 
-            $sql="INSERT INTO `product`(`pID`, `pName`, `pPrice`, `pStatus`, `pImage`, `pDesc`, `pQuantity`, `pCatID`) 
+            $sql="INSERT INTO `product`(`pID`, `pName`, `pImage`, `pQuantity`, `pPrice`, `eID`, `cID`, `supID`) 
                 VALUES(?,?,?,?,?,?,?,?)";
             $re = $dblink->prepare($sql);
             $stmt = $re->execute(array("$pID", "$pName", "$pImg", $pQuantity, $pPrice, $eID, $cID, $supID));
