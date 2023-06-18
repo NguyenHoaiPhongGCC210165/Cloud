@@ -41,10 +41,10 @@ include_once 'Header.php';
                     while($row = $re->fetch_assoc()):
                 ?>
 			<tr>
-              <td style="text-align: center"><?=$row['CatID']?></td>
-              <td style="text-align: center"><?=$row['CatName']?></td>
-              <td style='text-align:center'><a href="./Add_category.php?cid=<?=$row['CatID']?>" class="text-decoration-none"> Edit</a></td>
-              <td style='text-align:center'><a href="./Delete_category.php?cid=<?=$row['CatID']?>" class="text-decoration-none"> Delete</a></td>
+              <td style="text-align: center"><?=$row['cID']?></td>
+              <td style="text-align: center"><?=$row['cName']?></td>
+              <td style='text-align:center'><a href="./Add_category.php?cID=<?=$row['cID']?>" class="text-decoration-none"> Edit</a></td>
+              <td style='text-align:center'><a href="./Delete_category.php?cID=<?=$row['cID']?>" class="text-decoration-none"> Delete</a></td>
             </tr>
             <?php
                 //put your code here
@@ -54,3 +54,6 @@ include_once 'Header.php';
         </table>  
         </form>
     </div> <!--main-->
+<?php
+// include_once 'Footer.php';
+?>

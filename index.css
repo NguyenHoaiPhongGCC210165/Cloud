@@ -127,6 +127,7 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 .col-2{
     flex-basis: 50%;

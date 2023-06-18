@@ -13,14 +13,14 @@ include_once 'Header.php';
         
         $conn = new Connect();
         $dblink = $conn->connectToPDO();
-        if(isset($_POST['txtID']) && isset($_POST['txtName'])):
-                $cid = $_POST['txtID'];
-                $cname = $_POST['txtName'];
+        if(isset($_POST['cID']) && isset($_POST['cName'])):
+                $cID = $_POST['cID'];
+                $cName = $_POST['cName'];
 
                 if(isset($_POST['btnAdd'])): //Add action
-                        $sqlInsert = "INSERT INTO `category`(`CatID`, `CatName`) VALUES (?,?)";
+                        $sqlInsert = "INSERT INTO `category`(`cID`, `cName`) VALUES (?,?)";
                         $stmt = $dblink->prepare($sqlInsert);
-                        $execute = $stmt->execute(array("$cid","$cname"));
+                        $execute = $stmt->execute(array("$cID","$cName"));
                         
                         if($execute){
                                 header("Location: Category_management.php");
@@ -31,9 +31,9 @@ include_once 'Header.php';
                         
                 else:
                     //Update action
-                    $sqlUpdate = "UPDATE category SET CatID = ?, CatName = ? WHERE CatID = ?";
+                    $sqlUpdate = "UPDATE `category` SET `cID` = ?, `cName` = ? WHERE `cID` = ?";
                     $stmt = $dblink->prepare($sqlUpdate);
-                    $execute = $stmt->execute(array("$cid", "$cname", "$cid"));
+                    $execute = $stmt->execute(array("$cID", "$cName", "$cID"));
                     if($execute){
                         header("Location: Category_management.php");
                     }
@@ -47,22 +47,22 @@ include_once 'Header.php';
             <div class="form-group pb-3">
                 <label for="txtTen" class="col-sm-2 control-label">Category ID(*): </label>
                 <div class="col-sm-10">
-                    <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Category ID" value='<?php echo isset($_GET["cid"])?($_GET["cid"]):"";?>'>
+                    <input type="text" name="cID" id="cID" class="form-control" placeholder="Category ID" value='<?php echo isset($_GET["cID"])?($_GET["cID"]):"";?>'>
                 </div>
             </div>
 
             <div class="form-group pb-3">
                 <label for="txtTen" class="col-sm-2 control-label">Category Name(*): </label>
                 <div class="col-sm-10">
-                    <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Category Name" value="<?php echo isset($catName)?($catName):"";?>">
+                    <input type="text" name="cName" id="cName" class="form-control" placeholder="Category Name" value="<?php echo isset($cName)?($cName):"";?>">
                 </div>
             </div>
 
             <div class="form-group pb-3">
                 <div class="col-sm-offset-2 col-sm-10">
                     <input type="submit" class="btn btn-primary" 
-                        name="<?php echo isset($_GET["cid"])?"btnEdit":"btnAdd";?>"id="btnAction" 
-                        value='<?php echo isset($_GET["cid"])?"Edit":"Add new";?>'>
+                        name="<?php echo isset($_GET["cID"])?"btnEdit":"btnAdd";?>"id="btnAction" 
+                        value='<?php echo isset($_GET["cID"])?"Edit":"Add new";?>'>
                     <input type="button" class="btn btn-primary" name="btnIgnore" id="btnIgnore" value="Back to list" onclick="window.location.href='./Category_management.php'">
                 </div>
             </div>
