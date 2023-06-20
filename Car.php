@@ -38,7 +38,7 @@
         ?>           
         <div class="small-container">
             <div class="col-4">
-                <div class="card" style="">
+                <div class="card">
                     <a href="../ASM2/DetailProduct.php?id=<?=$r['pID']?>"><img src="../Images/<?=$r['pImage']?>" class="card-img-top" alt="Product1" style="margin: auto; width: 300px; height: 300px; border-radius: 20px"></a>
                     <div class="card-body" style="text-decoration: none">
                         <a href="../ASM2/DetailProduct.php?id=<?=$r['pID']?>" class="text-decoration-none"><h5 class="card-title" style="font-size: 20px; margin-left: 15px"><?=$r['pName']?></h5></a>

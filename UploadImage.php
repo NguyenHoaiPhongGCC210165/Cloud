@@ -32,6 +32,7 @@
             if($stmt == TRUE)
             {
                 echo "<script> alert('Success!') </script>";
+                header("Location: ./index.php");
             }else{
                 echo "<script> alert('Failed!!!') </script>";
             }
@@ -44,10 +45,10 @@
                         enctype="multipart/form-data">
                             <div class="form-body" style="font-size: 18px;">
                                 <div class="rowAdd" style="padding-left:350px; height: 500px;">
-                                    <div class="mb-3" style="padding-bottom: 5px;">
+                                    <!-- <div class="mb-3" style="padding-bottom: 5px;">
                                         <label for="exampleFormControlInput1" class="form-label" style="padding-left: 39px;">Product ID</label>
                                         <input type="text" class="form-control" name="pID" id="exampleFormControlInput1" placeholder="" style="width: 300px">
-                                    </div>
+                                    </div> -->
                                     <div class="mb-3" style="padding-bottom: 5px;">
                                         <label for="exampleFormControlInput1" class="form-label" style="padding-left: 16px;">Product Name</label>
                                         <input type="text" class="form-control" name="pName" id="exampleFormControlInput1" placeholder="" style="width: 300px">

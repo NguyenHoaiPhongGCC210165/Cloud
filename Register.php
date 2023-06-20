@@ -37,7 +37,7 @@
                                     $_SESSION['user_name'] = $row['Username'];
                                     $_SESSION['user_email'] = $row['Email'];
                                     $_SESSION['user_id'] = $row['UserID'];
-                                    header("Location: ./TestHomePage.php");
+                                    header("Location: ./index.php");
                                 }
                                 else{
                                     echo "<script> alert('Login Failed') </script>";

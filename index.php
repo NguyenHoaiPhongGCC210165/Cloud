@@ -28,7 +28,7 @@
                     <p>Car</p></a>
                 </div>
                 <div class="col-3">
-                    <a href="./Jewelry.php" style="text-decoration: none"><img src="./Images/Lego.jpg" height="309px">
+                    <a href="./Lego.php" style="text-decoration: none"><img src="./Images/Lego.jpg" height="309px">
                     <p>Lego</p></a>
                 </div>
             </div>
