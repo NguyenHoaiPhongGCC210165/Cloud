@@ -4,11 +4,11 @@
 ?>
             <div class="row">
                 <div class="col-2">
-                    <h1><span>Crafts</span><br>Is Always The First Choice</h1>
+                    <h1><span>(●'◡'●)</span><br>World of Toys for children</h1>
                     <!-- <a href="#" class="btn">Explore Now &#8594;</a> -->
                 </div>
                 <div class="col-2">
-                    <img src="./Images/Backgroung2_auto_x2.jpg">
+                    <img src="./Images/ToyWorld.jpg">
                 </div>
             </div>
         </div>

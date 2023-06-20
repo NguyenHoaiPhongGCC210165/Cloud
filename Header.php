@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="navbar">
                     <div class="logo">
-                        <a href="index.php"><img src="./Images/logo-remove.png" width="200px"></a>
+                        <a href="index.php"><img src="./Images/LOGO.png" width="200px"></a>
                     </div>
                     <nav>
                         <ul id="MenuItems">
