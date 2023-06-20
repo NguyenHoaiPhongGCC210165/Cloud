@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <title>Too TIRED!!!</title>
-        <link rel="stylesheet" href="../ASM2/TestHomePage.css">
+        <title>Toy World</title>
+        <link rel="stylesheet" href="./index.css">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -13,7 +13,7 @@
 </html>
 
 <?php
-include_once '../ASM2/Header.php';
+include_once './Header.php';
 include_once './connect.php';
 
     $c = new Connect();
@@ -59,7 +59,7 @@ include_once './connect.php';
         $rows = $stmt1->fetchAll(PDO::FETCH_BOTH);
     }
     else{
-        header("Location: ./RegisterForm.php");
+        header("Location: ./Register.php");
     }
 ?>
 
@@ -91,6 +91,6 @@ include_once './connect.php';
         <hr class="my-4">
 
         <div classs="pt-5">
-            <h6 class="mb-0"><a href="../ASM2/TestHomePage.php" class="text-body"><i class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+            <h6 class="mb-0"><a href="./index.css" class="text-body"><i class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
         </div>
     </div>
