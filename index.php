@@ -20,16 +20,16 @@
             <h2 class="title" id="C">Categories</h2>
             <div class="row">
                 <div class="col-3">
-                    <a href="./Watch.php" style="text-decoration: none"><img src="./Images/Watch2.webp">
-                    <p>Watch</p></a>
+                    <a href="./Motor.php" style="text-decoration: none"><img src="./Images/Motor.webp">
+                    <p>Motorcycle</p></a>
                 </div>
                 <div class="col-3">
-                    <a href="./Decor.php" style="text-decoration: none"><img src="./Images/Decor.webp">
-                    <p>Decor</p></a>
+                    <a href="./Car.php" style="text-decoration: none"><img src="./Images/Car.webp">
+                    <p>Car</p></a>
                 </div>
                 <div class="col-3">
-                    <a href="./Jewelry.php" style="text-decoration: none"><img src="./Images/Jewelry.webp" height="309px">
-                    <p>Jewelry</p></a>
+                    <a href="./Jewelry.php" style="text-decoration: none"><img src="./Images/Lego.jpg" height="309px">
+                    <p>Lego</p></a>
                 </div>
             </div>
         </div>
