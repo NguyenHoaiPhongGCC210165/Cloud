@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <title>Too TIRED!!!</title>
+        <title>Toy World</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
@@ -39,18 +39,18 @@
                                 width: 60%;
                                 padding-right: 50px;
                          "   
-                        src="../images/<?=$re['pImage']?>" 
+                        src="./Images/<?=$re['pImage']?>" 
                         />
                     </div>
-                        <ul 
+                        <ul
                         style = "
                             list-style-type:none;
-                            margin: auto; 
-                            width: 50%;   
+                            margin: auto;
+                            width: 50%;
                             font-size: 25px;
                             margin-top: 50px;
                         " 
-                    class="list-group">           
+                    class="list-group">   
                     Price:<li class="list-group-item" 
                               style="border-radius: 10px; 
                                      width: fit-content; 
@@ -73,9 +73,9 @@
                                            <?=$re['pDesc']?>
                                 </li>
                     <hr>
-                    <form action ="../ASM2/Cart.php" method="GET">
+                    <form action ="Cart.php" method="GET">
                         <div class="col-lg-9">
-                            <input type="hidden" name="pid" value="<?=$pid?>">
+                            <input type="hidden" name="pid" value="<?=$pID?>">
                             <input type="submit" class="btn btn-primary shop-button" 
                                    style="font-size: 25px; 
                                           border-radius: 20px; 
