@@ -75,7 +75,7 @@
 
     <h2 class="title" id="A" style="margin-bottom: 30px; font-size: 30px" >About Us</h2>
     <div class="about-section">
-        <p>This is a website that sells handmade products.</p>
+        <p>This is a website that sells toys.</p>
         <p>Manager: Nguyen Hoai Phong</p>
         <p>Phone: 0927472176</p>
     </div>
