@@ -14,10 +14,10 @@
             // $this -> password = "";
             // $this -> dbName = "asm2_cloud";
 
-            $this -> server = "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-            $this -> user = "wak9zxddsmr87tyd";
-            $this -> password = "hlvhasyos4iq84uf";
-            $this -> dbName = "anw8a1xlhhwul5ah";
+            $this -> server = "i0rgccmrx3at3wv3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+            $this -> user = "lac18ahwae3bztmu";
+            $this -> password = "bgdqjkj6oetytw12";
+            $this -> dbName = "fumjnyvfba42ajj6";
         }
         //Option 1: use mySQL (no condition)
         function connectToMySQL():mysqli
