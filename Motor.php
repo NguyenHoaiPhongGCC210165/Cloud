@@ -24,7 +24,7 @@
         </div>
     </div>
 
-<h2 class="title" style="margin-bottom: 30px; font-size: 30px" >Motorcycle Products</h2>
+<h2 class="title" style="margin-bottom: 30px; font-size: 30px" >Motorcycle Category</h2>
 <div class="row">
         <?php
             $c = new Connect();
