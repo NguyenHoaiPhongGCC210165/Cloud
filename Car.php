@@ -4,7 +4,25 @@
     error_reporting(0);
 ?>
 
-   
+    <div class="categories">
+        <div class="small-container">
+            <h2 class="title" id="C">Categories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <a href="./Motor.php" style="text-decoration: none"><img src="./Images/Motor.webp">
+                    <p>Motorcycle</p></a>
+                </div>
+                <div class="col-3">
+                    <a href="./Car.php" style="text-decoration: none"><img src="./Images/Car.webp">
+                    <p>Car</p></a>
+                </div>
+                <div class="col-3">
+                    <a href="./Lego.php" style="text-decoration: none"><img src="./Images/Lego.jpg" height="309px">
+                    <p>Lego</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <h2 class="title" style="margin-bottom: 30px; font-size: 30px" >Car Category</h2>
 <div class="row">
